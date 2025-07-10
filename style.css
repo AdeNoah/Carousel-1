@@ -8,7 +8,6 @@
 .carousel {
     position: relative;
     width: 600px;
-    /* margin: 25% auto auto auto; */
 }
 /* the images container or slider */
 .carousel .slider {
@@ -56,6 +55,8 @@
 .next {
     right: 0;
 } */
+
+
 
 /* classes added fron the javascript */
 .showSlide {

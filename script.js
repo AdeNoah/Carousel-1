@@ -5,10 +5,10 @@ const nextBtn = document.querySelector('.next');
 
 let slideIndex = 0;
 
-function showSlide() {
-    slidesArray.
+function displaySlide() {
+    slidesArray[slideIndex].classList.add('showSlide');   
 }
-showSlides()
+displaySlide()
 
 
 
