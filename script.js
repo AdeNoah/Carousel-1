@@ -5,11 +5,12 @@ const nextBtn = document.querySelector('.next');
 
 let slideIndex = 0;
 
+function showSlide() {
+    slidesArray.
+}
+showSlides()
 
 
-document.addEventListener('DOMContentLoaded', () => {
-    slidesArray[0].classList.add('showSlide');
-})
 
 
 

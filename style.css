@@ -20,7 +20,7 @@
     background: #faf0e5;
     border: none;
     border-radius: 1rem;
-    /* display: none; */
+    display: none;
 }
 .slider .slider-card img {
     border-top-left-radius: 1rem;
