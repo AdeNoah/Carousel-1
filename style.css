@@ -1,0 +1,63 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+/* the carousel container */
+.carousel {
+    position: relative;
+    width: 600px;
+    /* margin: 25% auto auto auto; */
+}
+/* the images container or slider */
+.carousel .slider {
+    width: 100%;
+}
+/* the cards in the carousel */
+.slider .slider-card {  
+    width: 100%;
+    background: #faf0e5;
+    border: none;
+    border-radius: 1rem;
+    /* display: none; */
+}
+.slider .slider-card img {
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    width: 100%;
+}
+.slider .slider-card .title {
+    text-align: center;
+}
+.slider .slider-card .description {
+    margin: 1em;
+}
+/* the carousel control buttons */
+/* .carousel button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    padding: 0 0.9rem;
+    border: none;
+    border-radius: 50%;
+    opacity: .2;
+}
+.carousel button:hover {
+    opacity: .6;
+}
+.carousel button:active {
+    opacity: 1;
+}
+.previous {
+    left: 0;
+}
+.next {
+    right: 0;
+} */
+
+/* classes added fron the javascript */
+.showSlide {
+    display: block;
+}
