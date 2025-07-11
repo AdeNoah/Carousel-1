@@ -13,8 +13,33 @@ function displaySlide() {
     });
     slides[slideIndex].style.display = 'block';
 }
-displaySlide()
+displaySlide();
 
+function playSlides() {
+    clearInterval(intervalId);
+    intervalId = setInterval(() => {
+        slideIndex++;
+        if(slideIndex >= slides.length) {
+            slideIndex = 0;
+        } else if(slideIndex < 0) {
+            slideIndex = slides.length
+        }
+        displaySlide();
+    }, intervalTime)
+}
+playSlides();
+
+nextBtn.addEventListener('click', () => {
+    slideIndex++;
+    // displaySlide();
+    if(slideIndex >= slides.length) {
+        slides
+    }
+})
+
+// previousBtn.addEventListener('click', () => {
+//     clearInterval(intervalId);
+// })
 
 
 
