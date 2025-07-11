@@ -31,10 +31,10 @@ playSlides();
 
 nextBtn.addEventListener('click', () => {
     slideIndex++;
-    // displaySlide();
     if(slideIndex >= slides.length) {
-        slides
+        slideIndex = 0;
     }
+    displaySlide();
 })
 
 // previousBtn.addEventListener('click', () => {
