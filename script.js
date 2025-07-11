@@ -1,12 +1,17 @@
 const slides = document.querySelectorAll('.slider-card');
-const slidesArray = Array.from(slides)
 const previousBtn = document.querySelector('.previous');
 const nextBtn = document.querySelector('.next');
+const resetBtn = document.querySelector('.reset');
 
 let slideIndex = 0;
+let intervalId;
+const intervalTime = 3000;
 
 function displaySlide() {
-    slidesArray[slideIndex].classList.add('showSlide');   
+    slides.forEach(slide => {
+        slide.style.display = 'none'
+    });
+    slides[slideIndex].style.display = 'block';
 }
 displaySlide()
 
@@ -15,4 +20,4 @@ displaySlide()
 
 
 console.log('hello carousel...')
-console.log(slidesArray[slideIndex])
+console.log(slides[slideIndex])

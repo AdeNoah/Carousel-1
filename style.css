@@ -7,7 +7,8 @@
 /* the carousel container */
 .carousel {
     position: relative;
-    width: 600px;
+    width: 80%;
+    margin: auto;
 }
 /* the images container or slider */
 .carousel .slider {
@@ -31,9 +32,16 @@
 }
 .slider .slider-card .description {
     margin: 1em;
+    padding-bottom: 1em;
 }
 /* the carousel control buttons */
-/* .carousel button {
+.carousel button:hover {
+    opacity: .6;
+}
+.carousel button:active {
+    opacity: 1;
+}
+.carousel .navigation {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -43,22 +51,22 @@
     border-radius: 50%;
     opacity: .2;
 }
-.carousel button:hover {
-    opacity: .6;
-}
-.carousel button:active {
-    opacity: 1;
-}
 .previous {
     left: 0;
 }
 .next {
     right: 0;
-} */
-
-
-
-/* classes added fron the javascript */
-.showSlide {
-    display: block;
 }
+.reset {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: 1.5rem;
+    padding: 0 0.4em;
+    opacity: 0.1;
+    border-radius: 1em;
+}
+
+
+
+/* classes added from the javascript */
