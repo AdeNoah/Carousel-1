@@ -29,20 +29,24 @@ function playSlides() {
 }
 playSlides();
 
+previousBtn.addEventListener('click', () => {
+    clearInterval(intervalId);
+    slideIndex--;
+    if(slideIndex < 0) {
+        slideIndex = slides.length - 1;
+    }
+    displaySlide();
+});
+
 nextBtn.addEventListener('click', () => {
     slideIndex++;
     if(slideIndex >= slides.length) {
         slideIndex = 0;
     }
     displaySlide();
+});
+
+resetBtn.addEventListener('click', () => {
+    slideIndex = 0;
+    displaySlide();
 })
-
-// previousBtn.addEventListener('click', () => {
-//     clearInterval(intervalId);
-// })
-
-
-
-
-console.log('hello carousel...')
-console.log(slides[slideIndex])
